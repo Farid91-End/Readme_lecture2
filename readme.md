@@ -136,7 +136,7 @@ ____
  Пример создания замыкания:
  
     function counter() {
-    let count = 0;**
+    let count = 0;
 
     function increment() {
     count++;
@@ -147,9 +147,9 @@ ____
     }
 
      const incrementCounter = counter();  
-     incrementCounter();** // 1
-     incrementCounter();** // 2
-     incrementCounter();** // 3
+     incrementCounter();  // 1
+     incrementCounter();  // 2
+     incrementCounter();  // 3
 
 В этом примере функция **counter()** возвращает другую функцию **increment()**, которая имеет доступ к переменной count из внешней области видимости **counter()**. Каждый раз, когда **increment()** вызывается, она увеличивает значение **count** на **1** и выводит его в консоль.
 
